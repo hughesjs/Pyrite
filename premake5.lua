@@ -1,6 +1,8 @@
 workspace "Pyrite"
     architecture "x64"
 
+    startproject "PyriteSandbox"
+
     configurations
     {
         "Debug",
