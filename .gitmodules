@@ -1,0 +1,3 @@
+[submodule "PyriteEngine/vendor/spdlog"]
+	path = PyriteEngine/vendor/spdlog
+	url = https://github.com/gabime/spdlog
