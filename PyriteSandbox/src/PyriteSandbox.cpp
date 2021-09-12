@@ -2,21 +2,21 @@
 
 class Sandbox : public Pyrite::Application
 {
-public:
-	Sandbox()
-	{
+	public:
+		Sandbox()
+		{
 
-	}
+		}
 
-	~Sandbox()
-	{
+		~Sandbox()
+		{
 
-	}
+		}
 
-	int Run()
-	{
-		return 0;
-	}
+		int Run()
+		{
+			return 0;
+		}
 };
 
 

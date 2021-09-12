@@ -5,6 +5,10 @@
 #include<stdio.h>
 
 // ENTRYPOINT
-#include "Core/EntryPoint.h"
-#include "Core/Application.h"
+#include "Core/Core.h"
+#include "Core/EntryPoint/EntryPoint.h"
+#include "Core/Application/Application.h"
+
+
+#include "Core/Logging/Log.h"
 
