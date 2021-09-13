@@ -1,7 +1,6 @@
 #pragma once
 
 #include "./KeyEvent.h"
-#include "../EventEnums.h"
 
 namespace Pyrite
 {

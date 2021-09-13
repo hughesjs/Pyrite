@@ -24,6 +24,8 @@ namespace Pyrite
 	protected:
 		bool m_Handled = false;
 	};
+
+	inline std::ostream& operator<<(std::ostream& os, const Event& e) { return os << e.ToString(); }
 }
 
 #define EVENT_CLASS_TYPE(type) static EventType GetStaticType() { return EventType::##type; }\
