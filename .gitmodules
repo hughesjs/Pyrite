@@ -1,0 +1,3 @@
+[submodule ".\\PyriteEngine\\vendor\\glfw"]
+	path = .\\PyriteEngine\\vendor\\glfw
+	url = https://github.com/hughesjs/glfw.git
