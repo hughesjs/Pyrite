@@ -7,10 +7,10 @@ namespace Pyrite
 	enum class EventType
 	{
 		None = 0,
-		AppTick, AppUpdate, AppRender,
-		WindowClose, WindowOpen, WindowResize, WindowFocus, WindowLostFocus, WindowMove,
+		ApplicationTick, ApplicationUpdate, ApplicationRender,
+		WindowClose, WindowResize, WindowFocus, WindowLostFocus, WindowMove,
 		KeyPress, KeyRelease,
-		MouseClickPress, MouseClickRelease, MouseMove, MouseSroll
+		MouseButtonPress, MouseButtonRelease, MouseMove, MouseScroll
 	};
 
 	enum EventCategory // Has to be a C style enum so we can use bitflags

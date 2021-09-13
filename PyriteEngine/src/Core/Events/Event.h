@@ -4,6 +4,7 @@
 #include "EventEnums.h"
 
 #include <string>
+#include <sstream>
 
 namespace Pyrite
 {
