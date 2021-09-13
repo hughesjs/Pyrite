@@ -10,6 +10,21 @@
     <Filter Include="Core\EntryPoint">
       <UniqueIdentifier>{59FAC6C3-C585-3488-CE96-B77C3AA19088}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Core\Events">
+      <UniqueIdentifier>{52201B74-BED5-9369-47CA-8D40B37E8A6D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Events\ApplicationEvents">
+      <UniqueIdentifier>{4A2736C2-B63F-1DEC-7FEC-AC85EBC3B185}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Events\KeyboardEvents">
+      <UniqueIdentifier>{075BBF2B-F36A-6BFC-5C24-D01A48535A95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Events\MouseEvents">
+      <UniqueIdentifier>{1F851203-8BBC-5A9A-94C6-BEBD007D8193}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Events\WindowEvents">
+      <UniqueIdentifier>{2EF87711-1A1D-C791-4368-AC212FECC5AF}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Core\Logging">
       <UniqueIdentifier>{C4E22202-B045-B2A6-59CB-EA5C450D7E29}</UniqueIdentifier>
     </Filter>
@@ -24,31 +39,76 @@
     <ClInclude Include="src\Core\EntryPoint\EntryPoint.h">
       <Filter>Core\EntryPoint</Filter>
     </ClInclude>
+    <ClInclude Include="src\Core\Events\ApplicationEvents\ApplicationEvent.h">
+      <Filter>Core\Events\ApplicationEvents</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Events\ApplicationEvents\ApplicationRenderEvent.h">
+      <Filter>Core\Events\ApplicationEvents</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Events\ApplicationEvents\ApplicationTickEvent.h">
+      <Filter>Core\Events\ApplicationEvents</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Events\ApplicationEvents\ApplicationUpdateEvent.h">
+      <Filter>Core\Events\ApplicationEvents</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Events\Event.h">
+      <Filter>Core\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Events\EventDispatcher.h">
+      <Filter>Core\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Events\EventEnums.h">
+      <Filter>Core\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Events\KeyboardEvents\KeyEvent.h">
+      <Filter>Core\Events\KeyboardEvents</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Events\KeyboardEvents\KeyPressEvent.h">
+      <Filter>Core\Events\KeyboardEvents</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Events\KeyboardEvents\KeyReleaseEvent.h">
+      <Filter>Core\Events\KeyboardEvents</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Events\MouseEvents\MouseButtonEvent.h">
+      <Filter>Core\Events\MouseEvents</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Events\MouseEvents\MouseButtonPressEvent.h">
+      <Filter>Core\Events\MouseEvents</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Events\MouseEvents\MouseButtonReleaseEvent.h">
+      <Filter>Core\Events\MouseEvents</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Events\MouseEvents\MouseEvent.h">
+      <Filter>Core\Events\MouseEvents</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Events\MouseEvents\MouseMoveEvent.h">
+      <Filter>Core\Events\MouseEvents</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Events\MouseEvents\MouseScrollEvent.h">
+      <Filter>Core\Events\MouseEvents</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Events\WindowEvents\WindowCloseEvent.h">
+      <Filter>Core\Events\WindowEvents</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Events\WindowEvents\WindowEvent.h">
+      <Filter>Core\Events\WindowEvents</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Events\WindowEvents\WindowFocusEvent.h">
+      <Filter>Core\Events\WindowEvents</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Events\WindowEvents\WindowLostFocusEvent.h">
+      <Filter>Core\Events\WindowEvents</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Events\WindowEvents\WindowMoveEvent.h">
+      <Filter>Core\Events\WindowEvents</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Events\WindowEvents\WindowResizeEvent.h">
+      <Filter>Core\Events\WindowEvents</Filter>
+    </ClInclude>
     <ClInclude Include="src\Core\Logging\Log.h">
       <Filter>Core\Logging</Filter>
     </ClInclude>
     <ClInclude Include="src\Pyrite.h" />
-    <ClInclude Include="src\Core\Events\Event.h" />
-    <ClInclude Include="src\Core\Events\EventEnums.h" />
-    <ClInclude Include="src\Core\Events\EventDispatcher.h" />
-    <ClInclude Include="src\Core\Events\ApplicationEvents\ApplicationEvent.h" />
-    <ClInclude Include="src\Core\Events\KeyboardEvents\KeyEvent.h" />
-    <ClInclude Include="src\Core\Events\KeyboardEvents\KeyPressEvent.h" />
-    <ClInclude Include="src\Core\Events\MouseEvents\MouseButtonPressEvent.h" />
-    <ClInclude Include="src\Core\Events\MouseEvents\MouseButtonReleaseEvent.h" />
-    <ClInclude Include="src\Core\Events\MouseEvents\MouseMoveEvent.h" />
-    <ClInclude Include="src\Core\Events\MouseEvents\MouseScrollEvent.h" />
-    <ClInclude Include="src\Core\Events\ApplicationEvents\ApplicationTickEvent.h" />
-    <ClInclude Include="src\Core\Events\ApplicationEvents\ApplicationUpdateEvent.h" />
-    <ClInclude Include="src\Core\Events\ApplicationEvents\ApplicationRenderEvent.h" />
-    <ClInclude Include="src\Core\Events\WindowEvents\WindowCloseEvent.h" />
-    <ClInclude Include="src\Core\Events\WindowEvents\WindowEvent.h" />
-    <ClInclude Include="src\Core\Events\WindowEvents\WindowResizeEvent.h" />
-    <ClInclude Include="src\Core\Events\WindowEvents\WindowFocusEvent.h" />
-    <ClInclude Include="src\Core\Events\WindowEvents\WindowLostFocusEvent.h" />
-    <ClInclude Include="src\Core\Events\WindowEvents\WindowMoveEvent.h" />
-    <ClInclude Include="src\Core\Events\MouseEvents\MouseEvent.h" />
-    <ClInclude Include="src\Core\Events\MouseEvents\MouseButtonEvent.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Core\Application\Application.cpp">
@@ -57,6 +117,5 @@
     <ClCompile Include="src\Core\Logging\Log.cpp">
       <Filter>Core\Logging</Filter>
     </ClCompile>
-    <ClCompile Include="src\Core\Events\KeyboardEvents\KeyReleaseEvent.h" />
   </ItemGroup>
 </Project>
