@@ -3,8 +3,6 @@
 #include "./KeyEvent.h"
 #include "../EventEnums.h"
 
-#include <sstream>
-
 namespace Pyrite
 {
 	class PYR_API KeyReleaseEvent : public KeyEvent

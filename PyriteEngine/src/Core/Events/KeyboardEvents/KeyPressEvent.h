@@ -1,9 +1,6 @@
 #pragma once
 
 #include "./KeyEvent.h"
-#include "../EventEnums.h"
-
-#include <sstream>
 
 namespace Pyrite
 {
@@ -25,6 +22,5 @@ namespace Pyrite
 
 	private:
 		int m_RepeatCount;
-
 	};
 }
