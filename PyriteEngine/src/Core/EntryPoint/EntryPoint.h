@@ -1,5 +1,4 @@
 #pragma once
-#include<stdio.h>
 
 #include "Core/Logging/Log.h"
 #include "Core/Application/Application.h"

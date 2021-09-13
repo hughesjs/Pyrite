@@ -20,6 +20,9 @@ workspace "Pyrite"
         targetdir ("bin/" .. outputdir .. "%{prj.name}")
         objdir ("tmp-build/" .. outputdir .. "%{prj.name}")
 
+        pchheader "pyrpch.h"
+        pchsource "%{prj.name}/src/pyrpch.cpp"
+
         files
         {
             "%{prj.name}/src/**.h",

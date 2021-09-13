@@ -2,7 +2,7 @@
 //NB: Include this in Pyrite games
 
 //Common
-#include<stdio.h>
+#include "pyrpch.h"
 
 // ENTRYPOINT
 #include "Core/Core.h"

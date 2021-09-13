@@ -109,6 +109,7 @@
       <Filter>Core\Logging</Filter>
     </ClInclude>
     <ClInclude Include="src\Pyrite.h" />
+    <ClInclude Include="src\pyrpch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Core\Application\Application.cpp">
@@ -117,5 +118,6 @@
     <ClCompile Include="src\Core\Logging\Log.cpp">
       <Filter>Core\Logging</Filter>
     </ClCompile>
+    <ClCompile Include="src\pyrpch.cpp" />
   </ItemGroup>
 </Project>
