@@ -8,7 +8,6 @@
 #include "Core/Core.h"
 #include "Core/EntryPoint/EntryPoint.h"
 #include "Core/Application/Application.h"
-
-
 #include "Core/Logging/Log.h"
+#include "Core/Events/EventEnums.h"
 

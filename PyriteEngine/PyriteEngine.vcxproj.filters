@@ -28,6 +28,27 @@
       <Filter>Core\Logging</Filter>
     </ClInclude>
     <ClInclude Include="src\Pyrite.h" />
+    <ClInclude Include="src\Core\Events\Event.h" />
+    <ClInclude Include="src\Core\Events\EventEnums.h" />
+    <ClInclude Include="src\Core\Events\EventDispatcher.h" />
+    <ClInclude Include="src\Core\Events\ApplicationEvents\ApplicationEvent.h" />
+    <ClInclude Include="src\Core\Events\KeyboardEvents\KeyEvent.h" />
+    <ClInclude Include="src\Core\Events\KeyboardEvents\KeyPressEvent.h" />
+    <ClInclude Include="src\Core\Events\MouseEvents\MouseButtonPressEvent.h" />
+    <ClInclude Include="src\Core\Events\MouseEvents\MouseButtonReleaseEvent.h" />
+    <ClInclude Include="src\Core\Events\MouseEvents\MouseMoveEvent.h" />
+    <ClInclude Include="src\Core\Events\MouseEvents\MouseScrollEvent.h" />
+    <ClInclude Include="src\Core\Events\ApplicationEvents\ApplicationTickEvent.h" />
+    <ClInclude Include="src\Core\Events\ApplicationEvents\ApplicationUpdateEvent.h" />
+    <ClInclude Include="src\Core\Events\ApplicationEvents\ApplicationRenderEvent.h" />
+    <ClInclude Include="src\Core\Events\WindowEvents\WindowCloseEvent.h" />
+    <ClInclude Include="src\Core\Events\WindowEvents\WindowEvent.h" />
+    <ClInclude Include="src\Core\Events\WindowEvents\WindowResizeEvent.h" />
+    <ClInclude Include="src\Core\Events\WindowEvents\WindowFocusEvent.h" />
+    <ClInclude Include="src\Core\Events\WindowEvents\WindowLostFocusEvent.h" />
+    <ClInclude Include="src\Core\Events\WindowEvents\WindowMoveEvent.h" />
+    <ClInclude Include="src\Core\Events\MouseEvents\MouseEvent.h" />
+    <ClInclude Include="src\Core\Events\MouseEvents\MouseButtonEvent.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Core\Application\Application.cpp">
@@ -36,5 +57,6 @@
     <ClCompile Include="src\Core\Logging\Log.cpp">
       <Filter>Core\Logging</Filter>
     </ClCompile>
+    <ClCompile Include="src\Core\Events\KeyboardEvents\KeyReleaseEvent.h" />
   </ItemGroup>
 </Project>

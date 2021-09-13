@@ -9,3 +9,7 @@
 #else
 	#error Windows is currently the only supported platform...
 #endif
+
+#define BIT(x) (1 << x)
+#define SET_BIT(x, y) (x | (1 << y))
+#define BIT_IS_SET(x, y) (x & y)
