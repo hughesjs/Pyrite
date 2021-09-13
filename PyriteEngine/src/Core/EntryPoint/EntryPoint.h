@@ -1,8 +1,8 @@
 #pragma once
 #include<stdio.h>
 
-#include "../Logging/Log.h"
-#include "../Application/Application.h"
+#include "Core/Logging/Log.h"
+#include "Core/Application/Application.h"
 
 #ifdef PYR_PLATFORM_WINDOWS
 
