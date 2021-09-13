@@ -3,9 +3,6 @@
 #include "Core/Core.h"
 #include "EventEnums.h"
 
-#include <string>
-#include <sstream>
-
 namespace Pyrite
 {
 	class PYR_API Event

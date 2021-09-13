@@ -1,3 +1,4 @@
+#include "pyrpch.h"
 #include "Application.h"
 
 namespace Pyrite
