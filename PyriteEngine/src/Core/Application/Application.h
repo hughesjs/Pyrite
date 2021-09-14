@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Core/core.h"
+#include "Core/Window/Window.h"
 
 namespace Pyrite
 {
@@ -10,6 +11,9 @@ namespace Pyrite
 			Application();
 			virtual ~Application();
 			int Run();
+		private:
+			std::unique_ptr<Core::Window::Window> m_Window;
+			bool m_Running = true;
 	};
 
 	//Defined in client

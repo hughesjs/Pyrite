@@ -11,8 +11,12 @@
 #include <vector>
 #include <unordered_map>
 #include <unordered_set>
+#include <stdint.h>
+
+#include "Core/Logging/Log.h"
 
 
 #ifdef PYR_PLATFORM_WINDOWS
 	#include <Windows.h>
+
 #endif // PYR_PLATFORM_WINDOWS

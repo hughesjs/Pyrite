@@ -12,6 +12,12 @@ workspace "Pyrite"
 
     outputdir="%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}/"
 
+    IncludeDir = {}
+    IncludeDir["glfw"] = "PyriteEngine/vendor/glfw/include"
+    IncludeDir["spdlog"] = "PyriteEngine/vendor/spdlog/include"
+
+    include "PyriteEngine/vendor/glfw" -- Adds the glfw premake file
+
     project "PyriteEngine"
         location "PyriteEngine"
         kind "SharedLib"
@@ -32,7 +38,14 @@ workspace "Pyrite"
         includedirs
         {
             "%{prj.name}/src",
-            "%{prj.name}/vendor/spdlog/include"
+            "%{IncludeDir.glfw}",
+            "%{IncludeDir.spdlog}"
+        }
+
+        links
+        {
+            "glfw",
+            "opengl32.lib"
         }
 
         filter "system:windows"
@@ -53,11 +66,19 @@ workspace "Pyrite"
             }
 
         filter "configurations:Debug"
-            defines "PYR_DEBUG"
+            defines
+            {
+                "PYR_DEBUG",
+                "PYR_ENABLE_ASSERTIONS"
+            }
             symbols "On"
         
         filter "configurations:Release"
-            defines "PYR_RELEASE"
+            defines
+            {
+                "PYR_RELEASE",
+                "PYR_ENABLE_ASSERTIONS"
+            }
             optimize "On"
 
         filter "configurations:Dist"
@@ -83,7 +104,7 @@ workspace "Pyrite"
 
         includedirs
         {
-            "PyriteEngine/vendor/spdlog/include",
+            "%{IncludeDir.spdlog}",
             "PyriteEngine/src"
         }
 
