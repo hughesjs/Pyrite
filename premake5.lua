@@ -66,11 +66,19 @@ workspace "Pyrite"
             }
 
         filter "configurations:Debug"
-            defines "PYR_DEBUG"
+            defines
+            {
+                "PYR_DEBUG",
+                "PYR_ENABLE_ASSERTIONS"
+            }
             symbols "On"
         
         filter "configurations:Release"
-            defines "PYR_RELEASE"
+            defines
+            {
+                "PYR_RELEASE",
+                "PYR_ENABLE_ASSERTIONS"
+            }
             optimize "On"
 
         filter "configurations:Dist"

@@ -10,4 +10,7 @@
 #include "Core/Application/Application.h"
 #include "Core/Logging/Log.h"
 #include "Core/Events/EventEnums.h"
+#include "Core/Events/Event.h"
+
+#include "Core/Window/Window.h"
 

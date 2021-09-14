@@ -79,7 +79,7 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pyrpch.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>PYR_PLATFORM_WINDOWS;PYR_BUILD_DLL;PYR_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>PYR_PLATFORM_WINDOWS;PYR_BUILD_DLL;PYR_DEBUG;PYR_ENABLE_ASSERTIONS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>src;vendor\glfw\include;vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
@@ -101,7 +101,7 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pyrpch.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>PYR_PLATFORM_WINDOWS;PYR_BUILD_DLL;PYR_RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>PYR_PLATFORM_WINDOWS;PYR_BUILD_DLL;PYR_RELEASE;PYR_ENABLE_ASSERTIONS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>src;vendor\glfw\include;vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -175,12 +175,16 @@
     <ClInclude Include="src\Core\Events\WindowEvents\WindowMoveEvent.h" />
     <ClInclude Include="src\Core\Events\WindowEvents\WindowResizeEvent.h" />
     <ClInclude Include="src\Core\Logging\Log.h" />
+    <ClInclude Include="src\Core\Window\Platform\WindowsWindow.h" />
+    <ClInclude Include="src\Core\Window\Window.h" />
+    <ClInclude Include="src\Core\Window\WindowProperties.h" />
     <ClInclude Include="src\Pyrite.h" />
     <ClInclude Include="src\pyrpch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Core\Application\Application.cpp" />
     <ClCompile Include="src\Core\Logging\Log.cpp" />
+    <ClCompile Include="src\Core\Window\Platform\WindowsWindow.cpp" />
     <ClCompile Include="src\pyrpch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>
